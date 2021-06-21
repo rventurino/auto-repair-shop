@@ -28,6 +28,7 @@ body{
 .heading{
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
 .blue{
     color: var(--queen-blue);
@@ -164,11 +165,11 @@ header{
 }
 
 .fa-phone{
-    color: var(--red-salsa);
+    color: #4267B2;
 }
 
 .call{
-    color: var(--red-salsa);
+    color: #4267B2;
 }
 /* 
 ===========================
@@ -285,4 +286,14 @@ services
     background-size: 400px;
     background-position: bottom;
     border: 5px solid var(--queen-blue);
+}
+
+/* 
+===========================
+about 
+===========================
+*/
+
+#about article{
+    margin-top: 75px;
 }
