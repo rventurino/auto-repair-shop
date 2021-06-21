@@ -65,7 +65,7 @@
               <h3 class="heading">Auto Repair</h3>
             </a>
           </li>
-          <li class="bottomRightShadow"> 
+          <li class="bottomRightShadow">
             <a href="#">
               <div class="logo allSides" id="logo3">
                 <i class="fas fa-calendar-alt"></i>
@@ -85,17 +85,37 @@
       </div>
       <div id="about" class="section">
         <article class="section-inner">
-          <h1 class="heading blue" >Welcome to Max Automotive Repair</h1>
-          <h3 class="heading gray">Max Automtive repair provides auto repair services you can count on!</h3>
-          <p>Max Automotive Repair has been providing customers in the Pittsburgh, PA 15203 area with the best quality auotomtive repair and maintenance since 1984. Our experienced technicians will keep your car running perfectly, or fix any problems you may have along your travels.</p>
-          <p>Max Automotive provides a range of services including Brakes, Domestic Cars & Trucks, Heating and Cooling, Oil Change services, Engine maintenance, and 4x4 services. We are incredibly proud of our skilled mechanics, many of whom have been with us for over 20 years. We have the knowledge and expertise to diagnose your problems, while providing you affordable solutions to get you back up and running ASAP.</p>
-          <p>Feel free to call us at (202) 555-5309 or email us today. We look forward to building a lasting relationship with you for all of your maintenance, repair, and diagnostic needs. </p>
-
+          <h1 class="heading blue">Welcome to Max Automotive Repair</h1>
+          <h3 class="heading gray">
+            Max Automtive repair provides auto repair services you can count on!
+          </h3>
+          <p>
+            Max Automotive Repair has been providing customers in the
+            Pittsburgh, PA 15203 area with the best quality auotomtive repair
+            and maintenance since 1984. Our experienced technicians will keep
+            your car running perfectly, or fix any problems you may have along
+            your travels.
+          </p>
+          <p>
+            Max Automotive provides a range of services including Brakes,
+            Domestic Cars & Trucks, Heating and Cooling, Oil Change services,
+            Engine maintenance, and 4x4 services. We are incredibly proud of our
+            skilled mechanics, many of whom have been with us for over 20 years.
+            We have the knowledge and expertise to diagnose your problems, while
+            providing you affordable solutions to get you back up and running
+            ASAP.
+          </p>
+          <p>
+            Feel free to call us at (202) 555-5309 or email us today. We look
+            forward to building a lasting relationship with you for all of your
+            maintenance, repair, and diagnostic needs.
+          </p>
         </article>
       </div>
       <!--maps api script tags here-->
-      <div id="map">
-        <!-- end map -->
+
+      <div id="map-section">
+        <div id="map"></div>
         <div id="map-details">
           <div class="map-details-head">
             <h4>Max Automotive</h4>
@@ -138,14 +158,31 @@
           </div>
           <div class="map-details-contact">
             <ul>
-              <li>(202) 555-5309</li>
-              <li>Email Us</li>
-              <li>Get Directions</li>
+              <li>
+                <i class="fas fa-phone"></i>
+                (202) 555-5309
+              </li>
+              <li>
+                <i class="far fa-envelope"></i>
+                Email Us
+              </li>
+              <li>
+                <i class="fas fa-route"></i>
+                Get Directions
+              </li>
             </ul>
           </div>
         </div>
         <!--end map details section-->
       </div>
+      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZYskxOfeTC8yjHnrYKrrpfslxRDSgtM&callback=initMap&libraries=&v=weekly"
+        async
+      ></script>
+
+      <!-- end map -->
+
       <!-- end map -->
       <div id="car-tips"></div>
 
@@ -213,5 +250,6 @@
         <div class="payment-methods">payment methods go here</div>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>
