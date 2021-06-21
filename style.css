@@ -71,6 +71,27 @@ ul{
 .last{
     border-right: none;
 }
+
+/* SHADOWS */
+
+.bottomRightShadow
+{
+ 
+  border-radius:  15px;
+  border: 1px solid var(--border-gray);
+  box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+  -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+}
+.allSides
+    {
+      
+      box-shadow:  0 0 10px  rgba(0,0,0,0.6);
+      -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+      -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+      -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+    }
 /* 
 ===========================
 Header 
@@ -205,10 +226,12 @@ services
 
 #services{
     display: grid;
-    grid-template-columns: 268px 268px 268px 268px;
+    grid-template-columns: repeat(4, auto);
     /*
     grid-template-rows: 238px 238px;
     */
+    max-width: 100%;
+    grid-column-gap: 50px;
     margin-top: 50px;
     padding-bottom: 120px;
     border-bottom: 3px dotted var(--border-gray);
@@ -217,7 +240,7 @@ services
 #services li {
     width: 238px;
     height: 238px;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -226,29 +249,40 @@ services
 }
 
 .logo{
+    color: white;
     height: 150px;
     width: 150px;
     display: flex;
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
     font-size: 75px;
-    border-radius: 50%;
-    box-shadow: 0px -10px  5px rgba(0, 0, 0, 0.308);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    background-size: 400px;
+    background: radial-gradient(circle, #162e42bb 0%, rgb(32, 8, 9) 62%, rgba(47,47,47,1) 100%), url("img/services/Metal_background_\(3\).jpg") ;
+
 }
 
 #logo1{
-    background-color: var(--maize-crayola);
+    background-size: 400px;
+    background-position: bottom;
+    border: 5px solid var(--orange-red);
 }
 
 #logo2{
-    background-color: var(--pistachio);
+    background-size: 400px;
+    background-position: bottom;
+    border: 5px solid var(--maize-crayola);
 }
 
 #logo3{
-    background-color: var(--red-salsa);
+    background-size: 400px;
+    background-position: bottom;
+    border: 5px solid var(--pistachio);
 }
 
 #logo4{
-    background-color: var(--queen-blue);
+    background-size: 400px;
+    background-position: bottom;
+    border: 5px solid var(--queen-blue);
 }
