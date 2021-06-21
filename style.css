@@ -336,7 +336,7 @@ map
     height: 400px;
     /* top right bottom left */
     padding: 50px 50px 20px 50px;
-    background: rgba(255, 252, 252, .9);
+    background: rgba(255, 252, 252, .8);
     box-shadow: 4px 4px 8px rgb(0 0 0 / 8%);
     border-radius: 5px;
     text-align: left;
@@ -353,11 +353,12 @@ map
     padding: 0;
 }
 
-.map-details-head p{
-    margin: 0;
-    padding: 0;
-}
 
+#map-details-address{
+  line-height: 1;
+  margin: 5px 0 15px 0;
+  padding: 0;
+}
 
 .map-details-hours{
     width: 100%;
@@ -365,7 +366,15 @@ map
 }
 .map-details-hours table{
     width: 100%;
+    margin-bottom: 15px;
 }
 .map-details-contact{
     width: 100%;
+}
+#map-section i{
+  margin-right: 5px;
+  color: #333;
+}
+#map-section ul li{
+  margin-bottom: 5px;
 }
