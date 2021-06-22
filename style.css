@@ -24,6 +24,7 @@ Utility
 }
 body {
   font-family: "Roboto", sans-serif;
+  
 }
 .heading {
   font-family: "Open Sans", sans-serif;
@@ -70,7 +71,7 @@ ul {
 }
 
 .section {
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,13 +102,26 @@ ul {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
+/*scroll bar*/
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #333;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(187, 187, 187);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
 /* 
 ===========================
 Header 
 ===========================
 */
 #top-container {
-  width: 100vw;
+  width: 100%;
   height: 115px;
   display: flex;
   align-items: center;
@@ -129,6 +143,7 @@ header {
   height: 75px;
 }
 #title {
+  margin-top: 20px;
   font-family: "Big Shoulders Stencil Display", cursive;
   display: flex;
   align-items: center;
@@ -145,7 +160,7 @@ header {
   font-size: 30px;
 }
 .container {
-  width: 100vw;
+  width: 100%;
 }
 
 #max-red {
@@ -219,13 +234,97 @@ hero
 */
 
 #hero {
-  height: 500px;
+  height: 800px;
   width: 100%;
-  background-image: url(img/hero/neonbrand-60krlMMeWxU-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  counter-increment: gallery-cell;
+  position: relative;
+}
+
+.carousel-text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.589);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-text .inner{
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+.carousel-text .line{
+  height: 3px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: white;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  
+}
+.carousel-text p {
+  color: white;
+  font-size: 1.2em;
+  padding: 0;
+  margin-top: 0;
+  
+}
+
+.img-one{
+  background-image: url(img/hero/berkeley-communications-WEDDt-u3q3o-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-two{
+  background-image: url(img/hero/checkengine.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-three{
+  background-image: url(img/hero/neonbrand-2K_-PG95qlI-unsplash.jpg);
+  background-size: cover;
+  background-position: top;
+}
+.img-four{
+  background-image: url(img/hero/neonbrand-60krlMMeWxU-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img-five{
+  background-image: url(img/hero/tekton-O_ufcLVTAYw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/* cell number 
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+*/
 
 /* 
 ===========================
@@ -378,3 +477,57 @@ map
 #map-section ul li{
   margin-bottom: 5px;
 }
+
+/* 
+===========================
+footer 
+===========================
+*/
+
+footer{
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  flex-direction: column;
+}
+#footer-top{
+
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  width: 100%;
+}
+
+#footer-top .container{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#footer-nav{
+  display: flex;
+
+}
+#footer-hours{
+
+}
+#footer-contact{
+
+}
+#footer-address{
+
+}
+#footer-nav a{
+  color: white;
+}
+
+#footer-hours{
+  
+}
+footer p{
+  color: white;
+}
+

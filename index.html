@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fontawesome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -11,9 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!--Flickity-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Max Automotive</title>
   </head>
+  <!--begin body-->
   <body>
     <div id="top-container">
       <div id="top-wrap">
@@ -42,7 +46,55 @@
       </div>
     </div>
     <main class="container">
-      <div id="hero"></div>
+      
+      <div id="hero" class="carousel" data-flickity='{ "autoPlay": true }'>
+        <div class="carousel-cell img-one">
+          <div class="carousel-text">
+            <div class="inner">
+            <h1>Need Some Assistance?</h1>
+            <div class="line"></div>
+            <p>Our team of professionals is at your service. Contact us so that we can answer any questions you may have. </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-cell img-two">
+          <div class="carousel-text">
+            <div class="inner">
+              <h1>Need Some Assistance?</h1>
+              <div class="line"></div>
+              <p>Our team of professionals is at your service. Contact us so that we can answer any questions you may have. </p>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-cell img-three">
+          <div class="carousel-text">
+
+            <div class="inner">
+              <h1>Need Some Assistance?</h1>
+              <div class="line"></div>
+              <p>Our team of professionals is at your service. Contact us so that we can answer any questions you may have. </p>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-cell img-four">
+          <div class="carousel-text">
+            <div class="inner">
+              <h1>Need Some Assistance?</h1>
+              <div class="line"></div>
+              <p>Our team of professionals is at your service. Contact us so that we can answer any questions you may have. </p>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-cell img-five">
+          <div class="carousel-text">
+            <div class="inner">
+              <h1>Need Some Assistance?</h1>
+              <div class="line"></div>
+              <p>Our team of professionals is at your service. Contact us so that we can answer any questions you may have. </p>
+              </div>
+          </div>
+        </div>
+      </div>
       <div id="services-container" class="section">
         <ul id="services">
           <!--
@@ -175,29 +227,34 @@
         </div>
         <!--end map details section-->
       </div>
-      <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-      <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZYskxOfeTC8yjHnrYKrrpfslxRDSgtM&callback=initMap&libraries=&v=weekly"
-        async
-      ></script>
+      
 
       <!-- end map -->
 
       <!-- end map -->
+      <!--
       <div id="car-tips"></div>
 
       <div id="associations"></div>
 
       <div id="testimonials"></div>
+      -->
     </main>
     <!-- end container -->
     <footer>
-      <div class="footer-top">
-        <div id="footer-nav"></div>
+      <div id="footer-top">
+        <div class="container">
+        <div id="footer-nav">
+          <ul>
+            <li class="heading"><a href="#">Our Shop</a></li>
+            <li class="heading"><a href="#">Auto Repair</a></li>
+            <li class="heading"><a href="#">Repair Tips</a></li>
+            <li class="heading"><a href="#">Contact US</a></li>
+            <li class="heading last"><a href="#">Appointment Requests</a></li>
+          </ul>
+        </div>
 
-        <div id="our-services"></div>
-
-        <div class="footer-hours">
+        <div id="footer-hours">
           <h6>Store Hours:</h6>
           <table>
             <tr>
@@ -231,7 +288,7 @@
           </table>
         </div>
 
-        <div class="footer-contact">
+        <div id="footer-contact">
           <ul>
             <li>(202) 555-5309</li>
             <li>Email Us</li>
@@ -239,17 +296,24 @@
           </ul>
         </div>
 
-        <div class="map-details-head">
+        <div id="footer-address">
           <h4>Max Automotive</h4>
           <p>1543 Cloverfield Ln.</p>
           <p>Pittsburgh, PA, 15203</p>
         </div>
+      </div>
       </div>
       <div id="footer-bottom">
         <p>Copyright &copy; Venturino Web Development. All Rights Reserved.</p>
         <div class="payment-methods">payment methods go here</div>
       </div>
     </footer>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="app.js"></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-ZYskxOfeTC8yjHnrYKrrpfslxRDSgtM&callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
   </body>
 </html>
