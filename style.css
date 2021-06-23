@@ -481,10 +481,13 @@ Contact Us
   background-color: var(--dark-gray);
 }
 .form-container {
-  max-width: 400px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #contact input[type="text"],
@@ -500,10 +503,10 @@ Contact Us
 #contact {
   background: var(--border-gray);
   padding: 25px;
-  /* top right bottom left */
   margin: 100px 0 100px 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.521), 0 5px 5px 0 rgba(0, 0, 0, 0.521);
   border-radius: 5px;
+  height: 460px;
 }
 
 #contact h3 {
@@ -601,6 +604,28 @@ fieldset {
 
 :-ms-input-placeholder {
   color: var(--border-gray);
+}
+
+#contact-divider{
+  width: 50px;
+  font-size: 3em;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-divider .line{
+  width: 5px;
+  border-radius: 5px;
+  height: 150px;
+  background-color: white;
+}
+  /* top right bottom left */
+#contact-divider p{
+  color: white;
+  margin: 10px 0 10px 0;
 }
 /* 
 ===========================
