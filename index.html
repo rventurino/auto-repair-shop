@@ -239,74 +239,87 @@
 
       <div id="testimonials"></div>
       -->
+      <div id="contact-section" class="section">
+      <div class="form-container">  
+        <form id="contact" action="" method="post">
+          <h3>Get in touch</h3>
+          <h4>Shoot us a message and receive a response within one day</h4>
+          <fieldset>
+            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Type your message here...." tabindex="4" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" >Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
     </main>
     <!-- end container -->
     <footer>
-      <div id="footer-top">
-        <div class="container">
-        <div id="footer-nav">
-          <ul>
-            <li class="heading"><a href="#">Our Shop</a></li>
-            <li class="heading"><a href="#">Auto Repair</a></li>
-            <li class="heading"><a href="#">Repair Tips</a></li>
-            <li class="heading"><a href="#">Contact US</a></li>
-            <li class="heading last"><a href="#">Appointment Requests</a></li>
-          </ul>
-        </div>
-
-        <div id="footer-hours">
-          <h6>Store Hours:</h6>
-          <table>
-            <tr>
-              <th>Sunday</th>
-              <td>Closed</td>
-            </tr>
-            <tr>
-              <th>Monday</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>Tuesday</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>Wednesday</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>Thursday</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>Friday</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>Saturday</th>
-              <td>9am - 5pm</td>
-            </tr>
-          </table>
-        </div>
-
-        <div id="footer-contact">
-          <ul>
-            <li>(202) 555-5309</li>
-            <li>Email Us</li>
-            <li>Get Directions</li>
-          </ul>
-        </div>
-
-        <div id="footer-address">
-          <h4>Max Automotive</h4>
-          <p>1543 Cloverfield Ln.</p>
-          <p>Pittsburgh, PA, 15203</p>
-        </div>
+      <div id="footer-upper">
+      <div class="footer-details-hours">
+        <h5 class="heading">Store Hours:</h5>
+        <table>
+          <tr>
+            <th>Sunday</th>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <th>Monday</th>
+            <td>9am - 5pm</td>
+          </tr>
+          <tr>
+            <th>Tuesday</th>
+            <td>9am - 5pm</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td>9am - 5pm</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td>9am - 5pm</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td>9am - 5pm</td>
+          </tr>
+          <tr>
+            <th>Saturday</th>
+            <td>9am - 5pm</td>
+          </tr>
+        </table>
       </div>
+      <div class="footer-details-contact">
+        <ul>
+          <li>
+            <i class="fas fa-phone"></i>
+            (202) 555-5309
+          </li>
+          <li>
+            <i class="far fa-envelope"></i>
+            Email Us
+          </li>
+          <li>
+            <i class="fas fa-route"></i>
+            Get Directions
+          </li>
+        </ul>
       </div>
-      <div id="footer-bottom">
-        <p>Copyright &copy; Venturino Web Development. All Rights Reserved.</p>
-        <div class="payment-methods">payment methods go here</div>
-      </div>
+    </div>
+  </div>
+  <div id="footer-lower">
+    <p>Copyright &copy; Venturino Web Development 2021. All Rights Reserved.</p>
+  </div>
     </footer>
     
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
