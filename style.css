@@ -12,6 +12,9 @@ Utility
   box-sizing: border-box;
   font-size: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --red-salsa: #f94144ff;
   --orange-red: #f3722cff;
@@ -193,6 +196,11 @@ header {
 
 .call {
   color: #4267b2;
+
+  font-size: 1em;
+}
+.call:hover{
+  text-decoration: underline;
 }
 /* 
 ===========================
@@ -213,6 +221,7 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+
 }
 
 nav ul li {
@@ -226,7 +235,13 @@ nav ul li {
   padding-bottom: 10px;
   padding-right: 10px;
   font-size: 0.9em;
+  
 }
+
+nav ul li:hover{
+  text-decoration: underline;
+}
+
 
 /* 
 ===========================
@@ -304,7 +319,7 @@ hero
   background-position: top;
 }
 .img-four {
-  background-image: url(img/hero/neonbrand-60krlMMeWxU-unsplash.jpg);
+  background-image: url(img/hero/emre-NZMeJsrMC8U-unsplash.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -729,7 +744,17 @@ footer {
 .footer-details-hours{
   margin-right: 30px;
 }
+.footer-details-contact{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2em;
+}
+.footer-details-contact a{
 
+  margin: 5px;
+}
 #footer-lower {
 
 
